@@ -12,8 +12,8 @@ app.use(express.static('../webApiUniNinos-SPA/dist/webApiUniNinos-SPA'));
 //Un get solicitando '/' directory
 app.get ('/', (requests, response) => {
 
-response.send('Hello World!, from node!')
-
+response.send('Hello World!, from node!');
+response.render(index);
 
 })
 
